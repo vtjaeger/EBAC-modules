@@ -5,23 +5,30 @@ import java.util.List;
 
 public class Main21 {
     public static void main(String[] args) {
-        List<String> alfabeto = new ArrayList<>();
+//        List<String> alfabeto = new ArrayList<>();
+//
+//        for(char letra = 'A'; letra <= 'Z'; letra++) {
+//            alfabeto.add(String.valueOf(letra));
+//        }
+//        System.out.println("com lambda");
+//        alfabeto.forEach(letra -> System.out.print(letra + " "));
+//
+//        System.out.println("\n\n");
+//
+//        System.out.println("sem lambda");
+//        imprimir(alfabeto);
+//    }
+//    static void imprimir(List<String> lista){
+//        int size = lista.size();
+//        for(int i = 0; i < size; i++) {
+//            System.out.print(lista.get(i) + " ");
+//        }
 
-        for(char letra = 'A'; letra <= 'Z'; letra++) {
-            alfabeto.add(String.valueOf(letra));
-        }
-        System.out.println("com lambda");
-        alfabeto.forEach(letra -> System.out.print(letra + " "));
+    Cat cat = new Cat("gato", 2);
+    cat.print();
 
-        System.out.println("\n\n");
+    Dog dog = new Dog("cao", 15);
+    dog.print();
 
-        System.out.println("sem lambda");
-        imprimir(alfabeto);
-    }
-    static void imprimir(List<String> lista){
-        int size = lista.size();
-        for(int i = 0; i < size; i++) {
-            System.out.print(lista.get(i) + " ");
-        }
     }
 }
